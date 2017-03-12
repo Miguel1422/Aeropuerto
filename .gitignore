@@ -250,3 +250,14 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+#Debug
+Aeropuerto/bin/
+/Aeropuerto/bin/
+/Aeropuerto/bin/*
+Aeropuerto/bin/*
+
+Aeropuerto/obj/
+/Aeropuerto/obj/
+/Aeropuerto/obj/*
+Aeropuerto/obj/*

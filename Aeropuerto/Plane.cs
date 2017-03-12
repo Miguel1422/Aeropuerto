@@ -68,6 +68,7 @@ namespace Aeropuerto
                 y = y + (dir.Y) * 5;
                 return;
             }
+
             DateTime now = DateTime.Now;
             TimeSpan elap = now - prev;
 
