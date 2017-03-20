@@ -18,6 +18,8 @@ namespace Aeropuerto
         private PrioQueue<Plane> planes;
         private float landX;
         private float landY;
+        private float xC;
+        private float yC;
         private int sizePlane;
         public Form1()
         {
@@ -27,6 +29,11 @@ namespace Aeropuerto
             landX = landY = 50;
             landX = 100;
 
+            xC = (float)(screen.Width * 0.5);
+            yC = (float)(screen.Height * 0.5) + 100;
+
+            //List c = new List();
+
             //planes = new ArrayList();
         }
 
@@ -35,7 +42,7 @@ namespace Aeropuerto
 
             Graphics g = e.Graphics;
 
-            g.DrawEllipse(Pens.Black, (float)(screen.Width * 0.5), (float)(screen.Height * 0.5) + 100, 10, 10);
+            g.DrawEllipse(Pens.Black, xC, yC, 10, 10);
 
             int y = 20;
             foreach (Plane p in planes)
@@ -77,7 +84,7 @@ namespace Aeropuerto
             {
                 return;
             }
-            planes.Add(new Plane(screen.Width * 0.5, screen.Height * 0.5 + 100, name, fuel));
+            planes.Add(new Plane(xC, yC, name, fuel));
 
 
 

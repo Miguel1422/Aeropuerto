@@ -91,7 +91,7 @@ namespace Aeropuerto
 
             if (theta > 2 * Math.PI)
             {
-                theta = 0;
+                //theta = 0;
             }
 
         }
@@ -166,6 +166,7 @@ namespace Aeropuerto
             }
             Image tmp = RotateImage(IMG, angle);
             g.DrawImage(tmp, (float)x - 10, (float)y - 50, 50, 50);
+            //g.FillEllipse(Brushes.Blue, (float)x - 10, (float)y - 50, 10, 10);
             g.DrawString(name + " " + fuel, font, Brushes.Black, (float)x, (float)y);
         }
 
